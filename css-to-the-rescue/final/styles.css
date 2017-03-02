@@ -1,0 +1,302 @@
+img, object, video, iframe {
+  max-width: 100%;
+}
+
+header, section, footer, aside, nav, main, article, figure {
+  display: block;
+}
+
+html, body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  color: #333;
+  font-weight: 300;
+  line-height: 1.6;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, legend{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 2em;
+  text-align: center;
+}
+
+section, #picture-with-subtitle, #rating, nav {
+  padding: 2em 1em;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Lightbox */
+#lightbox {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.lightbox {
+  float: none;
+  color: #fff;
+}
+
+@media (min-width: 30em) {
+  .lightbox {
+    float: right;
+  }
+}
+
+body > a {
+  display: block;
+  background: #498f3c;
+  color: #fff;
+  border: 1px solid #000;
+  width: 20em;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 5px;
+  padding: 1em 0;
+  text-decoration: none;
+}
+
+body > a:hover {
+  text-decoration: underline;
+  opacity: 0.8;
+}
+
+#lightbox a {
+  color: #fff;
+}
+
+#lightbox a::after {
+  content: "";
+  z-index:-1;
+  position: fixed;
+  display: block;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,.6);
+}
+
+#lightbox:target {
+  display: block;
+  width: 25%;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+/* Login */
+#lightbox form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+#lightbox form label {
+  color: #fff;
+}
+
+#lightbox form input[type="email"], [type="password"] {
+  border: 1px solid #646464;
+  border-radius: 4px;
+  padding: 1em;
+  margin-bottom: 1em;
+  font-size: 1em;
+}
+
+#lightbox form input[type="email"]:focus, [type="password"]:focus {
+  border: 1px solid #89A194;
+  transition: border 1s;
+}
+
+#lightbox form input[type="checkbox"] {
+  margin-bottom: -1.4em;
+}
+
+#lightbox form label[for="field-stay-logged-in"] {
+  margin-left: 1.4em;
+  cursor: pointer;
+}
+
+#lightbox form a:first-of-type {
+  text-decoration: underline;
+  margin-bottom: 1em;
+  color: #89A194;
+}
+
+.button {
+  background: #89A194;
+  border-radius: 5px;
+  padding: 1em 3em;
+  color: #fff;
+  text-align: center;
+  max-width: 100%;
+  opacity: 1;
+  cursor: pointer;
+  border: none;
+}
+
+/* Navigation */
+.navigation {
+  background: #333;
+  position: relative;
+}
+
+nav > h1 {
+  color: #fff;
+}
+
+.navigation ul {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 30em) {
+  .navigation ul {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .navigation ul li:hover ul {
+    margin-left: 0;
+  }
+
+  .navigation li {
+    border-left: 1px solid #333;
+  }
+}
+
+.navigation li a {
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  padding: 1em;
+  background: #c1c1c1;
+  color: #fff;
+  display: block;
+  box-sizing: border-box;
+  border-bottom: 1px solid #333;
+}
+
+.navigation li a:hover {
+  background: #89A194;
+  -webkit-transition: background .5s;
+  transition: background .5s;
+}
+
+.navigation ul ul {
+  display: none;
+}
+
+.navigation ul li:hover ul {
+  display: block;
+}
+
+/* Articles */
+
+.media {
+  width: 90%;
+  margin: 0 auto;
+  padding: 2em 0;
+}
+
+.media h2 {
+  margin-bottom: 1em;
+}
+
+.media article {
+  height: min-content;
+  position: relative;
+}
+
+.media article img {
+  float: left;
+  width: 33%;
+  padding: 0 1em 1em 0;
+}
+
+.media article:first-of-type img {
+  width: 100%;
+}
+
+.media::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.media a {
+  color: #89A194;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.media a:hover {
+  text-decoration: underline;
+}
+
+.media article a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.media aside {
+  display: none;
+}
+
+@media (min-width: 50em) {
+  .media article {
+    float: left;
+    padding: 0 1em;
+    box-sizing: border-box;
+  }
+
+  .media article:first-of-type p {
+    position: absolute;
+    background: #000;
+    color: #fff;
+    bottom: 0;
+    left: 1em;
+    right: 1em;
+    padding: 1em;
+    opacity: 0.7;
+  }
+}
+
+@media (min-width: 70em) {
+  .media article {
+    width: 33%;
+  }
+
+  .media article:first-of-type {
+    width: 75%;
+  }
+
+  .media aside {
+    width: 25%;
+    float: left;
+    display: block;
+  }
+}
+

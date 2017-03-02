@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+
+    <title>Site</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:700|Roboto:300,400">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav class="navigation">
+        <h1>De volkskrant</h1>
+        <a href="#lightbox" class="lightbox">Log in</a>
+        <div id="lightbox">
+            <form action="/" method="post">
+
+                <label for="field-email">Email</label>
+                <input type="email" id="field-email" name="field-email" autocomplete="email" required autofocus>
+
+                <label for="field-password">Password</label>
+                <input type="password" id="field-password" name="field-password" required>
+
+                <input type="checkbox" id="field-stay-logged-in" name="field-stay-logged-in" value="stay-logged-in">
+                <label for="field-stay-logged-in">Stay logged in</label>
+
+                <a href="/">Forgot password</a>
+
+                <a class="button" href="#">Login</a>
+
+            </form>
+        </div>
+        <ul>
+            <li><a href="index.html" aria-label="Home, current page">Home</a></li>
+            <li>
+                <a href="/products">Binnenland</a>
+
+                <ul>
+                    <li><a href="#">Politiek</a></li>
+                    <li><a href="#">Sport</a></li>
+                    <li><a href="#">Economie</a></li>
+                </ul>
+
+            </li>
+            <li><a href="#">buitenland</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="media">
+        <h1>Het laaste nieuws</h1>
+        <article>
+            <a href="/"><h2>Speelde de AIVD informatie door over contact tussen de Russen en Trump?</h2></a>
+
+            <img src="http://static1.persgroep.net/volkskrant/image/6172de50-364b-421f-bac4-8fc76708bb15?width=664&height=374" alt="Speelde de AIVD informatie door over contact tussen de Russen en Trump?" />
+
+            <p>De Nederlandse AIVD zou Amerikaanse zusterorganisaties hebben getipt over ontmoetingen tussen Russen en leden van het team rond Donald Trump, meldt The New York Times vandaag. Maar de informatie hierover is schaars en bovendien zeer moeilijk te controleren.</p>
+        </article>
+
+        <aside>
+            <h3>Meest gelezen</h3>
+            <ol>
+                <li><a href="">Trump oogst lof met eren dode commando: 'Hij is acht... </a></li>
+                <li><a href="">De Bumagrap is droog als woestijnzand</a></li>
+                <li><a href="">De kater na carnaval: wat heeft drie dagen leut ons... </a></li>
+                <li><a href="">Amerikaanse minister Justitie in de problemen</a></li>
+                <li><a href="">Tichelaar vertrekt als commissaris van de koning</a></li>
+            </ol>
+        </aside>
+
+        <article>
+            <a href="/"><h2>Factcheck: mogen er op Hogeschool van Amsterdam geen kerstbomen staan?</h2></a>
+
+            <img src="http://static0.persgroep.net/volkskrant/image/1e45d6ba-17e2-4609-8eef-89546a617ffa?width=664&height=374" alt="Politiek" />
+
+            <p>De Volkskrant checkt in aanloop naar de verkiezingen op 15 maart politieke uitspraken op waarheidsgehalte. Vandaag: mogen er op de Hogeschool van Amsterdam geen kerstbomen staan?</p>
+        </article>
+
+        <article>
+            <a href="/"><h2>Spotify streamt straks ook in cd-kwaliteit - einde van mp3 lijkt in zicht</h2></a>
+
+            <img src="http://static0.persgroep.net/volkskrant/image/9c4fb6aa-c20c-4683-a38f-74a68a3f6a44?width=664&height=374" alt="A bulldozer transporting a beach house along a sunny beach" />
+
+            <p>Muziekdienst Spotify gaat binnenkort muziek aanbieden in cd-kwaliteit. Spotify, dat nu nog al zijn muziek aanbiedt in mp3, heeft altijd gezegd dat de kwaliteit daarvan hoog genoeg is. De stap is waarschijnlijk ingegeven door concurrenten als Tidal en Apple Music, die ook muziek aanbieden in een betere kwaliteit. Betekent deze trend het einde van de mp3?</p>
+        </article>
+
+        <article>
+            <a href="/"><h2>Bellen met Willem: 'Koeman of De Boer naar Barcelona? Denk het niet'</h2></a>
+
+            <img src="http://static1.persgroep.net/volkskrant/image/e610d09f-90bd-43c6-9816-526cf6090152?width=664&height=374" alt="Barcelona trainer stapt op" />
+
+            <p>Luis Enrique stopt volgend seizoen als trainer van FC Barcelona. Dan beginnen ook de namen Frank de Boer en Ronald Koeman rond te zingen. We bellen met onze voetbalverslaggever Willem Vissers om die twee namen tegen het licht te houden. 'Koeman is echt een held in Barcelona, maar of hij trainer wordt? Denk het niet.'</p>
+        </article>
+    </main>
+
+<script src="script.js"></script>
+</body>
+</html>
