@@ -125,6 +125,14 @@ body > a:hover {
   transition: border 1s;
 }
 
+#login form input[type="email"]:valid, [type="password"]:valid{
+  border: 3px solid #498f3c;
+}
+
+#login form input[type="email"]:invalid, [type="password"]:invalid{
+  border: 3px solid red;
+}
+
 #lightbox form input[type="checkbox"] {
   margin-bottom: -1.4em;
 }
